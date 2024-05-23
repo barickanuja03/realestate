@@ -1,0 +1,112 @@
+$plain-text-color:rgb(212, 197, 184);
+$bgcolor:rgba(30,19,22,255);
+$bglinear-gradient:rgba(64,47,54,255);
+$aboutcolor:rgba(255,255,255,255);
+$celebrated-bg:rgb(243, 228, 231);
+$background:rgb(224, 210, 213);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+.hero-section{
+    background-image:linear-gradient(45deg,$bgcolor,$bglinear-gradient,$bgcolor);
+    position: relative;
+    height:45rem;
+       h1{
+        color:$plain-text-color;
+        font-size:4rem;
+        width: max-content;
+        position: absolute;
+        line-height: 5rem;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        z-index: 99;
+        span{
+            font-weight: 700;
+        }
+       }
+       .background-line{
+        position:absolute;
+        z-index:0;
+        height:32rem;
+        display: grid;
+        grid-template-columns:repeat(4, [col-start] 250px [col-end]);
+        color:$plain-text-color;
+       }
+}
+.about-rica{
+ background-color:white;
+ height:70rem;
+ position: relative;
+ .about-Rica-section{
+    position: absolute;
+    height:auto;
+    width: 70rem;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-image:linear-gradient(45deg,$bgcolor,$bglinear-gradient,$bgcolor);
+    .about-rica-sub-heading{
+        font-size:2rem;
+        color:$plain-text-color;
+        text-align: center;
+        margin:4rem auto 2rem auto;
+    }
+    .about-rica-heading{
+        font-size:5rem;
+        color:$plain-text-color;
+        text-align: center;
+        line-height: 4.9rem;
+        margin:3rem auto 2rem auto;
+    }
+     p{
+         font-size:1.8rem;
+         color:$plain-text-color;
+         text-align: center;
+         margin:3rem 6rem 3rem 6rem;
+     }
+ }
+}
+
+
+.CELEBRATED-DEVELOPER{
+    background-color: $celebrated-bg;
+    height:auto;
+     .CELEBRATED-DEVELOPER-SECTION{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin:5rem;
+        .CELEBRATED-DEVELOPER-ROW {
+             width:92rem;
+             height: 29rem;
+             background-color: $background;
+             border-radius: 1REM;
+             .CELEBRATED-DEVELOPER-TEXT {
+                     color:$bgcolor;
+                     margin-top: 2.5rem;
+                     font-size: 2rem;
+             }
+             .CELEBRATED-DEVELOPER-IMG {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                 img {
+                     margin:4rem auto;
+                     height: 14rem;
+                     width: 36rem;
+                     border-radius: 1.2rem;
+                     object-fit: cover;
+                 }
+                }
+            }
+         }
+            
+    }
+
