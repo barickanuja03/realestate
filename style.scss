@@ -14,9 +14,10 @@ body,html{
     overflow-x: hidden;
 }
 .hero-section{
-    background-image:linear-gradient(45deg,$bgcolor,$bglinear-gradient,$bgcolor);
+  background-image: url('./hero-section-img.jpg');
+  background-position: center center;
     position: relative;
-    height:45rem;
+    height:50rem;
        h1{
         color:$plain-text-color;
         font-size:4rem;
@@ -31,28 +32,14 @@ body,html{
             font-weight: 700;
         }
        }
-    //    .background-line{
-    //     position:absolute;
-    //     z-index:0;
-    //     height:32rem;
-    //     display: grid;
-    //     grid-template-columns:repeat();
-    //     color:$plain-text-color;
-    //    }
-     .background-line{
-         position:absolute;
-         display:grid;
-         grid-gap:6px;
-         grid-template-columns: repeat(10,auto);
-        span{
-            border-left:2px solid $plain-text-color;
-            height:35rem;
-        }
-    }
 }
 .about-rica{
- background-color:white;
- height:70rem;
+ background-image:url('./about-section-bg-img.jpg');
+ background-repeat: repeat-x;
+ background-position: center center;
+ background-size: contain;
+ opacity:1;
+height:70rem;
  position: relative;
  .about-Rica-section{
     position: absolute;
@@ -98,7 +85,7 @@ body,html{
              height: 29rem;
              background-color: $background;
              border-radius: 1REM;
-             margin:2rem auto;
+             margin:7rem auto 1rem auto;
              .CELEBRATED-DEVELOPER-TEXT {
                      color:$bgcolor;
                      margin-top: 2.5rem;
