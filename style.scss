@@ -31,14 +31,24 @@ body,html{
             font-weight: 700;
         }
        }
-       .background-line{
-        position:absolute;
-        z-index:0;
-        height:32rem;
-        display: grid;
-        grid-template-columns:repeat(4, [col-start] 250px [col-end]);
-        color:$plain-text-color;
-       }
+    //    .background-line{
+    //     position:absolute;
+    //     z-index:0;
+    //     height:32rem;
+    //     display: grid;
+    //     grid-template-columns:repeat();
+    //     color:$plain-text-color;
+    //    }
+     .background-line{
+         position:absolute;
+         display:grid;
+         grid-gap:6px;
+         grid-template-columns: repeat(10,auto);
+        span{
+            border-left:2px solid $plain-text-color;
+            height:35rem;
+        }
+    }
 }
 .about-rica{
  background-color:white;
@@ -51,7 +61,7 @@ body,html{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background-image:linear-gradient(45deg,$bgcolor,$bglinear-gradient,$bgcolor);
+    background-image:linear-gradient(45deg,$bgcolor,$bglinear-gradient,$bgcolor,$bglinear-gradient,);
     .about-rica-sub-heading{
         font-size:2rem;
         color:$plain-text-color;
@@ -88,6 +98,7 @@ body,html{
              height: 29rem;
              background-color: $background;
              border-radius: 1REM;
+             margin:2rem auto;
              .CELEBRATED-DEVELOPER-TEXT {
                      color:$bgcolor;
                      margin-top: 2.5rem;
